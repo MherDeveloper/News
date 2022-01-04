@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'news/css/style.css' %}">
+    <script src="{% static 'news/js/jquery-3.5.1.min.js' %}"></script>
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}" />
+</head>
+
+<div>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="header-menu ">
+                    <div class="logo">
+                        <h1>
+                            <a href="/">One Planet</a>
+                        </h1>
+                    </div>
+
+                    <div class="open-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                   {% block category %}
+                   {% endblock category %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+    {% block content %}
+
+    {% endblock %}
+{% if is_paginated %}
+    <div class="pagination" id="inner">
+        <span class="step-links" id=newssec>
+            {% if page_obj.has_previous %}
+                <a href="?page=1">&laquo; first</a>
+                <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+            {% endif %}
+
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">next</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
+        </span>
+             <span class="current"id = "news">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+            </span>
+</div>
+{% endif %}
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer_content">
+                    <ul>
+                        <li><svg id="Bold" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" fill='#03A9F4' xmlns="http://www.w3.org/2000/svg">
+                                <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z" /></svg><a href="#">Facebook</a></li>
+                        <li><img src="{% static 'news/img/instagram.svg' %}" alt=""><a href="#"> Instagram</a></li>
+                        <li><img src="{% static 'news/img/twitter.svg' %}" alt=""><a href="#">Telegram</a></li>
+                    </ul>
+                    <ul>
+                        <li><img src="{% static 'news/img/smartphone.svg' %}" alt=""><a href="tel:37443687787">+(374)92-1234567890</a></li>
+                        <li><img src="{% static 'news/img/smartphone.svg' %}" alt=""><a href="tel:37494907373">+(374)91-1234567890
+
+                    </a></li>
+                        <li><img src="{% static 'news/img/maps-and-flags.svg' %}" alt="">
+                        <a target="blank" href="https://www.google.com/maps/place/40%C2%B010'26.8%22N+44%C2%B030'20.3%22E/@40.174106,44.505638,13z/data=!4m5!3m4!1s0x0:0x0!8m2!3d40.174106!4d44.5056381?hl=ru-RU"> 9 Grigor Lusavorich Street, Yerevan 0015, Армения </a>
+
+                    </li>
+                    </ul>
+                </div>
+                <p class="copyright">Copyright &copy;<b class="year"> </b> <span>«One Planet» Digital Limited </span>All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'news/js/script.js' %}"></script>
+</body>

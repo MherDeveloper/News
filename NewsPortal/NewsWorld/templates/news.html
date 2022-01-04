@@ -1,0 +1,46 @@
+{% block news %}
+    {% for new in object_list %}
+        <div class="{% if forloop.counter|divisibleby:2 %}"> </div>
+            <section class="bg_black" id="register">
+                <div class="container">
+                    <div class="lessons">
+                        <div class="text_content">
+                            <a href="#">
+                                <h2>{{ new.title }}</h2>
+                                <p>{{ new.content|truncatewords:50 | safe }}</p>
+                                <p style="color:red;">{{ new.date }}</p>
+                            </a>
+                            <div class="cont">
+                                <a href="{% url 'news' new.slug %}">Read More</a>
+                            </div>
+                        </div>
+                        <div class="img_content">
+                            <img src="{{ new.picture.url }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <div class="hr_line"></div>
+    {% else %}
+        <div class="hr_line"></div>
+            <section class="bg_black">
+                <div class="container">
+                    <div class="lessons">
+                        <div class="img_content">
+                            <img src="{{ new.picture.url }}" alt="">
+                        </div>
+                        <div class="text_content">
+                                <h2>{{ new.title }}</h2>
+                                <p>{{ new.content|truncatewords:60 | safe }}</p>
+                                <p style="color:red;">{{ new.date }}</p>
+                            <div class="cont">
+                                <a href="{% url 'news' new.slug %}">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <div class="hr_line"></div>
+    {% endif %}
+{% endfor %}
+{% endblock news %}

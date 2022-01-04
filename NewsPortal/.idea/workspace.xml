@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bac3af0d-e912-456a-9d99-fbedd8948cbb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1kkL7SuitkPwy55g1id6JEwjUwQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bac3af0d-e912-456a-9d99-fbedd8948cbb" name="Default Changelist" comment="" />
+      <created>1606239474662</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606239474662</updated>
+    </task>
+    <task id="LOCAL-00001" summary="News Portal">
+      <created>1606660160869</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606660160869</updated>
+    </task>
+    <task id="LOCAL-00002" summary="News Portal">
+      <created>1606660439530</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606660439530</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Remove">
+      <created>1606660611030</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606660611030</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="News Portal" />
+    <MESSAGE value="Remove" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="479" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606654730726">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="479" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1606654730726" />
+    <state x="332" y="125" key="CommitChangelistDialog2" timestamp="1606660610781">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="332" y="125" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1606660610781" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1606660612215">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606660612215" />
+    <state x="427" y="205" width="586" height="548" key="find.popup" timestamp="1606659451792">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="427" y="205" width="586" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1606659451792" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1606327207622">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606327207622" />
+  </component>
+</project>

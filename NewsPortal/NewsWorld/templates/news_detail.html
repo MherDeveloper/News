@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ New.category }}{% endblock title %}
+{% block category %}
+    <div class="for-mobile-bg"></div>
+        <div class="menu-cnt mobile-bg-1">
+            <div id="mySidenav" class="sidenav">
+                <ul>
+                    <li class="category-link">
+                        <a class="category" href="#">Categories</a>
+                    <ul class="sub-category">
+                        {% for category in view.get_categories %}
+                            {% if category == New.category %}
+                                <li><a style="color:red;" href= "{% url 'filter' category.slug %}  " >{{ category }} </a></li>
+                            {% else %}
+                                <li><a href= "{% url 'filter' category.slug %}" >{{ category }} </a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </ul>
+            </div>
+        </div>
+{% endblock category %}
+{% block content %}
+    <section>
+        <div class="service_details">
+            <br>
+            <br>
+            <div class="container">
+                <div class="lessons">
+                    <div class="img_content">
+                        <img src="{{ New.picture.url }}" alt="">
+                    </div>
+                    <div class="text_content">
+                        <h2>{{ New.category }}</h2>
+                        <h2>{{ New.title }}</h2>
+                        <p>{{ New.content | safe}}</p>
+                        <p>Date - {{ New.date }}</p>
+                        <p>Author - {{ New.author }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="hr_line"></div>
+    <section>
+        <div class="head_title">
+            <h2  class="hideme">Additional news</h2 >
+        </div>
+        <div class="service">
+            <div class="container">
+                <div class="service_block">
+                    {% for service in additional|slice:":11" %}
+                        {% for additional_category in service.additional_category.all  %}
+                            {% if additional_category == New.category %}
+                                <div class="service_card">
+                                    <div class="service_img">
+                                        <img src="{{ service.picture.url }}" alt="">
+                                    </div>
+                                   <a href="{% url 'news' service.slug %}"><div class="service_content">
+                                        {{service.title}}
+                                    </div></a>
+                                </div>
+                            {% endif %}
+                        {%endfor %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="hr_line"></div>
+{% endblock content %}

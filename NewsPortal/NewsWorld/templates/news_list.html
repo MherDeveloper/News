@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} News {% endblock title %}
+{% block category %}
+    <div class="for-mobile-bg"></div>
+        <div class="menu-cnt mobile-bg-1">
+            <div id="mySidenav" class="sidenav">
+                <ul>
+                    <li class="category-link">
+                        <a class="category" href="#">Categories</a>
+                    <ul class="sub-category">
+                        {% for category in view.get_categories %}
+                                <li><a href= "{% url 'filter' category.slug %}  " >{{ category }} </a></li>
+                        {% endfor %}
+                    </ul>
+                </ul>
+            </div>
+        </div>
+{% endblock category %}
+{% block content %}
+
+
+    <div class="banner">
+        <img src="{% static 'news/img/world.png' %}" alt="">
+        <div class="black">
+            <h1> Everything about world </h1>
+        </div>
+    </div>
+    <div class="hr_line"></div>
+        <div class="head_title">
+            <h2 id="lessons" class="hideme">News</h2>
+        </div>
+
+
+{% include 'news.html' %}
+
+{% endblock content %}
